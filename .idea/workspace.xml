@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ad29ddf-c72b-426f-84fe-26c3c936efbb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leftToolBarPage/LeftToolBarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leftToolBarPage/LeftToolBarPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/loginPage/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loginPage/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/loginPageTest/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/loginPageTest/LoginPageTest.java" afterDir="false" />
     </list>
@@ -147,7 +148,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/loginPage/LoginPage.java</url>
-          <line>27</line>
+          <line>28</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

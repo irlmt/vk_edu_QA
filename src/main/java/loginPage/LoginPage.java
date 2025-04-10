@@ -4,7 +4,8 @@ import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$x;
+import static com.codeborne.selenide.Condition.visible;
+
 
 public class LoginPage {
     private SelenideElement emailField = $(By.xpath("//*[@id=\"field_email\"]"));
@@ -17,7 +18,7 @@ public class LoginPage {
     }
 
     public void enterEmail(String email) {
-        emailField.setValue(email);
+        emailField.shouldBe(visible).setValue(email);
     }
 
     public void enterPassword(String password) {
