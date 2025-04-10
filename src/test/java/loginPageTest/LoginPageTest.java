@@ -5,8 +5,8 @@ import loginPage.LoginPage;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Selenide.*;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class LoginPageTest {
@@ -19,7 +19,6 @@ public class LoginPageTest {
         loginPage.enterPassword("Wrong Pasword");
         loginPage.clickSignIn();
 
-        SelenideElement errorLine = $("//div[@class=\"input-e login_error\"");
-        errorLine.shouldBe(visible);
+        loginPage.getErrorLine().shouldBe(visible);
     }
 }
