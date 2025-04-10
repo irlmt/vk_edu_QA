@@ -17,9 +17,9 @@ public class LoginPageTest {
         LoginPage loginPage = new LoginPage();
         loginPage.enterEmail("Wrong Login");
         loginPage.enterPassword("Wrong Pasword");
-        loginPage.clickSigIn();
+        loginPage.clickSignIn();
 
-        SelenideElement errorLine = $(By.xpath("//*[@id=\"tabpanel-login-704701471\"]/form/div[3]/div"));
-        assertTrue(errorLine.isDisplayed());
+        SelenideElement errorLine = $("//div[@class=\"input-e login_error\"");
+        errorLine.shouldBe(visible);
     }
 }
