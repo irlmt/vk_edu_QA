@@ -1,9 +1,10 @@
-package loginPageTest;
+package tests.loginPageTest;
 
-import leftToolBarPage.LeftToolBarPage;
-import loginPage.LoginPage;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
+import pages.leftToolBarPage.LeftToolBarPage;
+import pages.loginPage.LoginPage;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.visible;
@@ -16,6 +17,7 @@ public class LoginPageTest {
         clearBrowserLocalStorage();
         open("about:blank");
     }
+    @Tag("loginCheck")
     @Test
     public void testLoginError() {
         open("https://ok.ru/");
@@ -27,6 +29,7 @@ public class LoginPageTest {
 
         loginPage.getErrorLine().shouldBe(visible);
     }
+    @DisplayName("Check correct login")
     @Test
     public void testSuccessfulLogin(){
         open("https://ok.ru/");

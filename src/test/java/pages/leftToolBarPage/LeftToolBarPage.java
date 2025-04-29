@@ -1,4 +1,4 @@
-package leftToolBarPage;
+package pages.leftToolBarPage;
 
 import com.codeborne.selenide.SelenideElement;
 
